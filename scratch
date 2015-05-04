@@ -1,0 +1,36 @@
+ $fields = array("title","code","credits","prerequisite","description","outcomes");
+          $countfields = count($fields);
+
+         
+
+            for($ctr=0; $ctr<$countfields;$ctr++){
+               $value = $fields[$ctr];
+                echo "<b>".strtoupper($value).":</b>";
+
+              ?>
+        
+          <div id='<?php echo $fields[$ctr];?>' contenteditable="true" 
+          class="editableHtml cke_editable cke_editable_inline cke_contents_ltr cke_show_borders" 
+          tabindex="0" spellcheck="false" role="textbox" 
+          aria-label="Rich Text Editor, editor3" title="Rich Text Editor,editor3"  
+          aria-describedby="cke_94" style="position: relative;">
+     
+          </div>
+        <script>
+            CKEDITOR.disableAutoInline = true;
+            var editor = CKEDITOR.inline( '<?php echo $fields[$ctr]?>' );
+        </script>
+
+
+        $html = '<table>';
+
+foreach($your_data_array as $key => $current) {
+    $html .= '<tr>
+        <td>' . $current['your_var'] . '</td>
+        <td>' . $current['another_var'] . '</td>
+    </tr>';
+}
+
+$html .= '</table>';
+
+$pdf->writeHTML($html, true, false, true, false, '');

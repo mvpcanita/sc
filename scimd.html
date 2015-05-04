@@ -1,0 +1,308 @@
+  <html lang="en" debug="false"><div id="FirebugChannel" style="display: none;">FB_deactivate</div><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <link href="scmid.css" rel="stylesheet">
+
+<script src="ckeditor/ckeditor.js"></script>
+ 
+<script type="text/javascript">
+// <!--
+//     function toggle_visibility(id) {
+//        var e = document.getElementById(id);
+//        if(e.style.display == 'block'){
+
+//           e.style.display = 'none';
+//           e.style.visibility = 'hidden';
+//            // $('a').click(slow,function(e){$('#outcomes').fadeOut('slow');});
+         
+//         }
+//        else{
+//           e.style.display = 'block';
+//           e.style.visibility = 'visible';
+//           // $('outcomes').fadeIn('slow');
+//         }
+//     }
+// //-->
+ </script>
+ <script language="javascript"> 
+    function test() 
+    { 
+        var div_content = document.getElementById("editor1").innerHTML; 
+        document.forms["informationfrm"].informationtxt.value += div_content;
+        document.forms["informationfrm"].submit();
+        // location.href = "savesyllabus.php?c=" + div_content ,"tab";     
+    } 
+</script> 
+
+
+<nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">SCMiD</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#" onclick="test()">Save</a></li>
+              <li><a href="#about">Preview</a></li>
+              <li><a href="#contact">Print</a></li>
+              <!-- <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li> -->
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+   
+
+     <ul class="nav nav-tabs content-tabs" role="tablist" >
+        <li role="presentation" class="active" ><a href="#information" data-toggle="tab">Information</a></li>
+ <!--        <li role="presentation"><a href="#">Description</a></li>
+        <li role="presentation"><a href="#">Outcomes</a></li> -->
+        <!--  <li role="presentation"><a href="#">Reading</a></li> -->
+           <!--   <li role="presentation"><a href="#">Consultation Hours</a></li> -->
+        <li role="presentation"><a href="#learningoutcomes" data-toggle="tab">Learning Outcomes</a></li>
+        <li role="presentation"><a href="#topics" data-toggle="tab">Topics</a></li>
+        <li role="presentation"><a href="#methodology" data-toggle="tab">Methodology</a></li>
+        <li role="presentation"><a href="#resources" data-toggle="tab">Resources</a></li>
+        <li role="presentation"><a href="#assessment" data-toggle="tab">Assessment</a></li>
+       <!--  <li role="presentation"><a href="#">Requirements</a></li> -->
+         <!--  <li role="presentation"><a href="#">Date Revised</a></li> -->
+        <li role="presentation"><a href="#grading"data-toggle="tab">Grading</a></li>
+          <li role="presentation"><a href="#policy"data-toggle="tab">Policy</a></li>
+
+   
+
+      </ul>
+
+ 
+
+
+
+
+<div class="col-sm-2 pull-left" style="width:180px">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Control Panel</h3>
+            </div>
+            <div class="panel-body">
+      <ul style="padding:1px;">
+              <li data-toggle="tab" role="presentation">Learning Outcomes</li>
+              <li>Blooms Taxonomy</li>
+              
+          <ul >
+             <li>  <a href="#remember"  data-toggle="tab">Remember</a></li>
+            <li><a href="#understand"  data-toggle="tab">Understand</a></li>
+            <li><a href="#apply"  data-toggle="tab">Apply</a></li>
+            <li><a href="#analyze"  data-toggle="tab">Analyze</a></li>
+            <li><a href="#evaluate"  data-toggle="tab">Evaluate</a></li>
+            <li><a href="#create"  data-toggle="tab">Create</a></li>
+          </ul>
+          
+          <li>Resources</li>
+          <li>Grading</li>
+        
+      </ul>
+
+            </div>
+          </div>
+          </div>
+<div class="col-xs-5 col-md-5 main-content main-content-height main-content-width pull-right">
+<div class="tab-content">
+
+<div class="well well-align tab-pane fade in active"  id="remember" >
+  <h4>Remember - retrieve knowledge from long-term memory</h4>
+    <p><u>Sample Verbs</u></p>
+        <p><span style="color:#00f">Define | Describe | Label | List | Match | Recall | Recognize | State </span></p>
+
+    <p><u>Example</u></p>
+      <ul>
+        <li>List the steps for task analysis</li>
+        <li>Name the symptoms of Parkinson Disease</li>
+        <li>Define the term progress as used by military strategist</li>
+      </ul>
+      <p><u>Assessment type</u></p>
+      <ul>
+        <li>Fill in the blanks</li>
+        <li>Multiple Choice</li>
+        <li>Labelling Diagrams</li>
+        <li>Reciting</li>
+      </ul>
+      <p><u>Example</u></p>
+      <p>Asking students about the definition of sustainability given by the Bruntland Commission</p>
+      <p><u>Activity</u></p>
+      <ul>
+        <li>Lectures</li>
+        <li>Discussions</li>
+        <li>Case Studies</li>
+        <li>Writing</li>
+        <li>Labs</li>
+        <li>Group Projects</li>
+      </ul>
+         <p><u>Example</u></p>
+      <p>Conducting a lecture about diffferent definitions of sustainability</p>
+      </ul> 
+      </div>
+
+<div class="well well-align tab-pane fade in active" id="understand">
+  <h4>Understand - construct meaning from instructional messages, including oral, written, graphic communication</h4>
+    <p><u>Sample Verbs</u></p>
+        <p><span style="color:#00f">Classify | Compare | Discuss | Exemplify | Explain | Identify | Illustrate | Infer | Interpret | Predict | Report | Review | Summarize | Translate
+</span></p>
+
+    <p><u>Example</u></p>
+      <ul>
+        <li>List the steps for task analysis</li>
+        <li>Name the symptoms of Parkinson Disease</li>
+        <li>Define the term progress as used by military strategist</li>
+      </ul>
+      </div>
+
+<div class="well well-align tab-pane fade in active"  id="apply">
+  <h4>Apply - carry out/use procedure in a given situation</h4>
+    <p><u>Sample Verbs</u></p>
+        <p><span style="color:#00f">Apply | Change | Choose | Demonstrate | Execute | Implement | Prepare | Solve | Use
+
+</span></p> 
+
+    <p><u>Example</u></p>
+      <ul>
+        <li>List the steps for task analysis</li>
+        <li>Name the symptoms of Parkinson Disease</li>
+        <li>Define the term progress as used by military strategist</li>
+      </ul>
+      </div>
+
+<div class="well well-align tab-pane fade in active"  id="analyze">
+  <h4>Analyze - break material into constituent parts; determine how parts relate to one another and to an overall structure</h4>
+    <p><u>Sample Verbs</u></p>
+        <p><span style="color:#00f">Analyse | Attribute | Debate | Differentiate | Distinguish | Examine | Organize | Research
+</span></p> 
+
+    <p><u>Example</u></p>
+      <ul>
+        <li>List the steps for task analysis</li>
+        <li>Name the symptoms of Parkinson Disease</li>
+        <li>Define the term progress as used by military strategist</li>
+      </ul>
+      </div>
+
+
+
+<div class="well well-align tab-pane fade in active"  id="evaluate">
+  <h4>Evaluate - make judgements based on criteria and standards</h4>
+    <p><u>Sample Verbs</u></p>
+        <p><span style="color:#00f">Appraise | Check | Critique | Judge
+
+</span></p> 
+
+    <p><u>Example</u></p>
+      <ul>
+        <li>List the steps for task analysis</li>
+        <li>Name the symptoms of Parkinson Disease</li>
+        <li>Define the term progress as used by military strategist</li>
+      </ul>
+      </div>
+
+<div class="well well-align tab-pane fade in active"  id="create">
+  <h4>Create - put elements together fo form coherent or functional whole; reorganize elements into a new pattern or structure</h4>
+    <p><u>Sample Verbs</u></p>
+        <p><span style="color:#00f">Compose | Construct | Create | Design | Develop | Formulate | Generate |Invent | Make | Organize | Plan | Produce | Propose 
+
+</span></p> 
+
+    <p><u>Example</u></p>
+      <ul>
+        <li>List the steps for task analysis</li>
+        <li>Name the symptoms of Parkinson Disease</li>
+        <li>Define the term progress as used by military strategist</li>
+      </ul>
+      </div>
+
+</div>
+
+    
+
+
+</div>
+<div class="col-xs-8 col-md-8 main-tab-content-height main-tab-content-width" >
+ <div id="information" class="main-tab tab-pane fade in active">
+      <!--   <h3 class="editable" data-can-delete="true" tabindex="0">information</h3> -->
+    
+          <div id="editor1" contenteditable="true" class="editableHtml cke_editable cke_editable_inline cke_contents_ltr cke_show_borders" tabindex="0" spellcheck="false" role="textbox" aria-label="Rich Text Editor, editor3" title="Rich Text Editor, editor3"  aria-describedby="cke_94" style="position: relative;">
+      <!--   -->
+          <p>Information</p>
+      </div>
+        <script>
+            CKEDITOR.disableAutoInline = true;
+            var editor = CKEDITOR.inline( 'editor1' );
+        </script>
+        <form name="informationfrm" id="informationfrm" method="POST" action="savesyllabus.php">
+        <textarea name="informationtxt" style="display:none;visibility:none;"></textarea>
+        <button value="save" onclick="test()">Save</button>
+        </form>    
+               
+      </div> 
+         
+
+ 
+
+      <!-- <div id="learningoutcomes" class="main-tab tab-pane fade in active">
+        <h3 class="editable" data-can-delete="true" tabindex="0">Learning</h3>
+          <div id="editor2" contenteditable="true" class="editableHtml cke_editable cke_editable_inline cke_contents_ltr cke_show_borders" tabindex="0" spellcheck="false" role="textbox" aria-label="Rich Text Editor, editor3" title="Rich Text Editor, editor3"  aria-describedby="cke_94" style="position: relative;">
+          <p>Some test text</p>
+      </div>
+        <script>
+            CKEDITOR.disableAutoInline = true;
+            var editor2 = CKEDITOR.inline( 'editor' );
+        </script>              
+      </div>
+
+      <div id="ltopics" class="main-tab tab-pane fade in active">
+        <h3 class="editable" data-can-delete="true" tabindex="0">Topics</h3>
+          <div id="editor3" contenteditable="true" class="editableHtml cke_editable cke_editable_inline cke_contents_ltr cke_show_borders" tabindex="0" spellcheck="false" role="textbox" aria-label="Rich Text Editor, editor3" title="Rich Text Editor, editor3"  aria-describedby="cke_94" style="position: relative;">
+          <p>Some test text</p>
+      </div>
+        <script>
+            CKEDITOR.disableAutoInline = true;
+            var editor3 = CKEDITOR.inline( 'editor' );
+        </script>              
+      </div> -->
+
+
+
+</div>  
+
+
+
+     
+
+
+            </html>
+
+      <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>

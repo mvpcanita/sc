@@ -1,0 +1,17 @@
+<html>
+<head>
+<script src="ckeditor/ckeditor.js">
+</script>
+</head>
+<body>
+	
+	<h3 class="editable" data-can-delete="true" tabindex="0">Heading</h3>
+<div id="editor" contenteditable="true" class="editableHtml cke_editable cke_editable_inline cke_contents_ltr cke_show_borders" tabindex="0" spellcheck="false" role="textbox" aria-label="Rich Text Editor, editor3" title="Rich Text Editor, editor3"  aria-describedby="cke_94" style="position: relative;">
+<p>Some test text</p>
+</div>
+<script>
+CKEDITOR.disableAutoInline = true;
+
+var editor = CKEDITOR.inline( 'editor' );
+</script>
+</body>
